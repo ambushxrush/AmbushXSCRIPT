@@ -1,0 +1,298 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local tab1 = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local tab2 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local tab3 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Script1 = Instance.new("Frame")
+local Script2 = Instance.new("Frame")
+local Script3 = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Frame.Position = UDim2.new(0.35574019, 0, 0.414663464, 0)
+Frame.Size = UDim2.new(0, 413, 0, 164)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel.Position = UDim2.new(0, 0, -0.365853667, 0)
+TextLabel.Size = UDim2.new(0, 308, 0, 50)
+TextLabel.Font = Enum.Font.Michroma
+TextLabel.Text = "Evade Hub Version 1V"
+TextLabel.TextColor3 = Color3.fromRGB(243, 243, 243)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0, 0, -0.0721154585, 0)
+TextLabel_2.Size = UDim2.new(0, 413, 0, 11)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Position = UDim2.new(-0.0292207785, 0, -0.371951222, 0)
+TextLabel_3.Size = UDim2.new(0, 9, 0, 224)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(0.744658649, 0, -0.365853667, 0)
+TextLabel_4.Size = UDim2.new(0, 9, 0, 224)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_5.Position = UDim2.new(0.743761718, 0, -0.365853667, 0)
+TextLabel_5.Size = UDim2.new(0, 105, 0, 50)
+TextLabel_5.Font = Enum.Font.Michroma
+TextLabel_5.Text = "Drag Frame"
+TextLabel_5.TextColor3 = Color3.fromRGB(243, 243, 243)
+TextLabel_5.TextSize = 14.000
+
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.Position = UDim2.new(0.977104306, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 9, 0, 164)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = ""
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 14.000
+
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_7.Position = UDim2.new(-0.285293996, 0, -0.371951222, 0)
+TextLabel_7.Size = UDim2.new(0, 105, 0, 225)
+TextLabel_7.Font = Enum.Font.Michroma
+TextLabel_7.Text = "Tabs Script"
+TextLabel_7.TextColor3 = Color3.fromRGB(243, 243, 243)
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextYAlignment = Enum.TextYAlignment.Top
+
+tab1.Name = "tab1"
+tab1.Parent = Frame
+tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tab1.Position = UDim2.new(-0.275608778, 0, -0.181871533, 0)
+tab1.Size = UDim2.new(0, 97, 0, 29)
+tab1.Font = Enum.Font.SourceSans
+tab1.Text = "Script 1"
+tab1.TextColor3 = Color3.fromRGB(0, 0, 0)
+tab1.TextSize = 14.000
+
+UICorner.Parent = tab1
+
+tab2.Name = "tab2"
+tab2.Parent = Frame
+tab2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tab2.Position = UDim2.new(-0.275608778, 0, 0.0681284666, 0)
+tab2.Size = UDim2.new(0, 97, 0, 29)
+tab2.Font = Enum.Font.SourceSans
+tab2.Text = "Script 2"
+tab2.TextColor3 = Color3.fromRGB(0, 0, 0)
+tab2.TextSize = 14.000
+
+UICorner_2.Parent = tab2
+
+tab3.Name = "tab3"
+tab3.Parent = Frame
+tab3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tab3.Position = UDim2.new(-0.275608778, 0, 0.293738216, 0)
+tab3.Size = UDim2.new(0, 97, 0, 29)
+tab3.Font = Enum.Font.SourceSans
+tab3.Text = "Script 3"
+tab3.TextColor3 = Color3.fromRGB(0, 0, 0)
+tab3.TextSize = 14.000
+
+UICorner_3.Parent = tab3
+
+Script1.Name = "Script1"
+Script1.Parent = Frame
+Script1.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Script1.Position = UDim2.new(-0.0074560428, 0, -0.0121657206, 0)
+Script1.Size = UDim2.new(0, 310, 0, 164)
+
+Script2.Name = "Script2"
+Script2.Parent = Frame
+Script2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Script2.Position = UDim2.new(-0.00500769075, 0, -0.00606815983, 0)
+Script2.Size = UDim2.new(0, 311, 0, 163)
+Script2.Visible = false
+
+Script3.Name = "Script3"
+Script3.Parent = Frame
+Script3.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Script3.Position = UDim2.new(-0.00019211974, 0, -0.01216585, 0)
+Script3.Size = UDim2.new(0, 314, 0, 164)
+Script3.Visible = false
+
+TextLabel_8.Parent = Script3
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_8.Position = UDim2.new(0.00939202774, 0, 0, 0)
+TextLabel_8.Size = UDim2.new(0, 311, 0, 34)
+TextLabel_8.Font = Enum.Font.Michroma
+TextLabel_8.Text = "Credit"
+TextLabel_8.TextColor3 = Color3.fromRGB(243, 243, 243)
+TextLabel_8.TextSize = 14.000
+
+TextLabel_9.Parent = Script3
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_9.Position = UDim2.new(-0.000162112483, 0, 0.371951222, 0)
+TextLabel_9.Size = UDim2.new(0, 155, 0, 23)
+TextLabel_9.Font = Enum.Font.Michroma
+TextLabel_9.Text = "Developer by Ambush"
+TextLabel_9.TextColor3 = Color3.fromRGB(243, 243, 243)
+TextLabel_9.TextSize = 14.000
+
+TextLabel_10.Parent = Script3
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_10.Position = UDim2.new(-0.00971622765, 0, 0.609756112, 0)
+TextLabel_10.Size = UDim2.new(0, 140, 0, 23)
+TextLabel_10.Font = Enum.Font.Michroma
+TextLabel_10.Text = "Developer by JINE"
+TextLabel_10.TextColor3 = Color3.fromRGB(243, 243, 243)
+TextLabel_10.TextSize = 14.000
+
+TextLabel_11.Parent = Script3
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_11.Position = UDim2.new(0.39474234, 0, 0.859756112, 0)
+TextLabel_11.Size = UDim2.new(0, 192, 0, 23)
+TextLabel_11.Font = Enum.Font.Michroma
+TextLabel_11.Text = "Powered By Roblox Studio"
+TextLabel_11.TextColor3 = Color3.fromRGB(243, 243, 243)
+TextLabel_11.TextSize = 14.000
+
+-- Scripts:
+
+local function AYTQTX_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+		end
+end
+coroutine.wrap(AYTQTX_fake_script)()
+local function MPMUEYM_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+		end
+end
+coroutine.wrap(MPMUEYM_fake_script)()
+local function YUTSA_fake_script() -- TextLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_4)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+		end
+end
+coroutine.wrap(YUTSA_fake_script)()
+local function VUJVXQ_fake_script() -- TextLabel_6.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_6)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+		end
+end
+coroutine.wrap(VUJVXQ_fake_script)()
+local function ZAQSEE_fake_script() -- tab1.LocalScript 
+	local script = Instance.new('LocalScript', tab1)
+
+	script.Parent.MouseButton1Click:connect(function()
+		
+		script.Parent.Parent.Script1.Visible = true
+		
+		script.Parent.Parent.Script2.Visible = false
+		
+		script.Parent.Parent.Script3.Visible = false
+		
+		wait(0.1)
+		
+	end)
+end
+coroutine.wrap(ZAQSEE_fake_script)()
+local function PJMHMZ_fake_script() -- tab2.LocalScript 
+	local script = Instance.new('LocalScript', tab2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		
+		script.Parent.Parent.Script2.Visible = true
+		
+		script.Parent.Parent.Script1.Visible = false
+		
+		script.Parent.Parent.Script3.Visible = false
+		
+		wait(0.1)
+		
+	end)
+end
+coroutine.wrap(PJMHMZ_fake_script)()
+local function SNRPE_fake_script() -- tab3.LocalScript 
+	local script = Instance.new('LocalScript', tab3)
+
+	script.Parent.MouseButton1Click:connect(function()
+		
+		script.Parent.Parent.Script3.Visible = true
+		
+		script.Parent.Parent.Script2.Visible = false
+		
+		script.Parent.Parent.Script1.Visible = false
+		
+		wait(0.1)
+		
+	end)
+end
+coroutine.wrap(SNRPE_fake_script)()
